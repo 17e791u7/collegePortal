@@ -5,12 +5,12 @@ const route =express.Router() ;
 
 console.log(FrontController)
 
-route.get('/',FrontController.register)
+
 route.get("/home",FrontController.home)
 route.get("/contact",FrontController.contact)
 route.get("/",FrontController.login)  
-// route.get("/register",FrontController.register) 
-route.get("/contact",FrontController.contact)
+route.get("/register",FrontController.register) 
+
 route.get("/about",FrontController.about)
 //insertdata
 route.post('/userinsert',FrontController.userinsert)
