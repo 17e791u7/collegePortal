@@ -1,0 +1,61 @@
+<%-include("../header.ejs")%>
+
+    <!-- <h1>Course Details</h1>
+    <h1><%=c%></h1>
+    <h1><%=n%></h1> -->
+<div class="container mt-5">
+
+    <% if(msg.length>0) { %>
+        <div class="alert alert-success">
+            <!-- To Print -->
+            <%= msg %>
+        </div>
+
+        <% } %>
+
+    <table class="table table-bordered">
+<thead>
+
+    <tr class="table-center bg-info">
+        <td colspan="6">Course Display</td>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Course</td>
+        <td>Status</td>
+        <td>Action</td>
+     </tr>
+</thead>
+<tbody>
+    <% c.forEach((item)=> {  %>
+        <tr>
+            <td><%=item.id %></td>
+            <td><%=item.name %></td>
+            <td><%=item.email %></td>
+            <td><%=item.course %></td>
+            <td><%=item.status %></td>
+            <td>
+                <a class="btn btn-info" href="/viewCourse/<%=item.id%>">View</a>
+                <a class="btn btn-success" href="/editCourse/<%=item.id%>">Edit</a>
+                <a class="btn btn-danger" href="deleteCourse/<%=item.id%>">Delete</a>
+            </td>
+        </tr> 
+
+
+
+
+        <% }) %>
+
+
+
+
+</tbody>
+
+
+</table>
+    </div> <!--container-end-->
+
+
+<%- include('../footer.ejs')%>

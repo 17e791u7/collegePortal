@@ -1,0 +1,54 @@
+<%-include("../header.ejs")%>
+
+    <!-- <h1>Course Details</h1>
+    <h1><%=c%></h1>
+    <h1><%=n%></h1> -->
+    <h1>Course View</h1>
+<div class="container mt-5">
+    <table class="table table-bordered">
+<thead>
+
+    <tr class="table-center bg-info">
+        <td colspan="7">Course View</td>
+    </tr>
+    <tr>
+        
+        <th>Name </th>
+        <th>Email</th>
+       <th>Course</th>
+        <th>phone</th>
+      <th>Address</th>
+       <th>Status</th>
+      <th>Comment</th>
+     </tr>
+</thead>
+<tbody>
+    
+        <tr>
+        
+            <td><%=c.name %></td>
+            <td><%=c.email %></td>
+            <td><%=c.course %></td>
+            <td><%=c.phone %></td>
+            <td><%=c.address%></td>
+            <td><%=c.status %></td>
+            <td><%=c.comment %></td>
+            
+        </tr> 
+
+
+
+
+    
+
+
+
+
+</tbody>
+
+
+</table>
+    </div> <!--container-end-->
+
+
+<%- include('../footer.ejs')%>
