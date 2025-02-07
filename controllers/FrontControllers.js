@@ -185,7 +185,7 @@ class FrontController {
         text: "heelo", // plain text body
         html: "<p>Hii " +
           name +
-          ',Please click here to <a href="http://localhost:3000/register/verify?id=' +
+          ',Please click here to <a href="https://collegeportal-mhn5.onrender.com/register/verify?id=' +
           user_id +
           '">Verify</a>Your mail</p>.',
   
@@ -456,7 +456,7 @@ class FrontController {
         text: "heelo", // plain text body
         html: "<p>Hii " +
           name +
-          ',Please click here to <a href="http://localhost:3000/reset_password?token=' +
+          ',Please click here to <a href="https://collegeportal-mhn5.onrender.com/reset_password?token=' +
           token +
           '">Reset</a>Your Password.',
   

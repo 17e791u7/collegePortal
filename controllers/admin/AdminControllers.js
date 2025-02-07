@@ -378,7 +378,7 @@ class AdminController{
                 <div class="email-header">Message Registered Successfully</div>
                 <div class="email-body">
                     <p>Dear <b>${name} </b>,</p>
-                   <p>please <a href="http://localhost:3000/admin/passwordPage" btn btn-secondry>Reset </a> your password using reset button<br>
+                   <p>please <a href="https://collegeportal-mhn5.onrender.com/admin/passwordPage" btn btn-secondry>Reset </a> your password using reset button<br>
                    <p>
                     
                    
